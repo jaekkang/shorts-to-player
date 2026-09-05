@@ -1,0 +1,337 @@
+:root {
+  --indigo: #4f46e5;
+  --indigo-dark: #3730a3;
+  --ink: #111827;
+  --paper: #ffffff;
+  --muted: #c7d2fe;
+  --grey: #6b7280;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(180deg, #4f46e5 0%, #3730a3 100%);
+  color: #fff;
+  line-height: 1.6;
+}
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+header.hero {
+  text-align: center;
+  padding: 96px 24px 72px;
+}
+
+.hero .logo {
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
+  margin-bottom: 28px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 {
+  font-size: clamp(32px, 6vw, 52px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.hero p.tagline {
+  font-size: clamp(16px, 2.5vw, 21px);
+  color: var(--muted);
+  margin: 16px auto 36px;
+  max-width: 640px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 28px;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn:hover { transform: translateY(-2px); }
+
+.btn-primary {
+  background: #fff;
+  color: var(--indigo);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+}
+
+.btn-ghost {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  margin-left: 12px;
+}
+
+section.feature {
+  padding: 72px 24px;
+  text-align: center;
+}
+
+section.feature:nth-of-type(even) {
+  background: rgba(0, 0, 0, 0.14);
+}
+
+.feature h2 {
+  font-size: clamp(26px, 4vw, 38px);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.feature p.sub {
+  color: var(--muted);
+  font-size: clamp(15px, 2vw, 19px);
+  margin: 12px auto 48px;
+  max-width: 620px;
+}
+
+/* ===== mockups ===== */
+.mock-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.shorts-card {
+  width: 200px;
+  height: 356px;
+  background: var(--ink);
+  border-radius: 18px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.shorts-card .tag {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  color: #9ca3af;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.play-tri {
+  width: 0;
+  height: 0;
+  border-top: 22px solid transparent;
+  border-bottom: 22px solid transparent;
+  border-left: 34px solid #fff;
+}
+
+.arrow {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.player-card {
+  width: 380px;
+  max-width: 90vw;
+  background: #fff;
+  border-radius: 18px;
+  padding: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.player-card .screen {
+  background: var(--ink);
+  border-radius: 10px;
+  height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-card .seek {
+  margin: 16px 4px 8px;
+  height: 6px;
+  border-radius: 3px;
+  background: #e5e7eb;
+  position: relative;
+}
+
+.player-card .seek .prog {
+  width: 60%;
+  height: 100%;
+  border-radius: 3px;
+  background: var(--indigo);
+}
+
+.player-card .seek .head {
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--indigo);
+}
+
+.player-card .meta {
+  display: flex;
+  justify-content: space-between;
+  color: var(--grey);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px;
+}
+
+/* popup mockup */
+.popup-card {
+  width: 340px;
+  max-width: 90vw;
+  margin: 0 auto;
+  background: #fff;
+  color: #202124;
+  border-radius: 18px;
+  padding: 24px 26px;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.popup-card h3 { font-size: 19px; margin-bottom: 14px; }
+
+.popup-card .group-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--grey);
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+
+.popup-card .opt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 0;
+  font-size: 15px;
+}
+
+.radio {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2.5px solid #d1d5db;
+  flex-shrink: 0;
+}
+
+.radio.on {
+  border-color: var(--indigo);
+  position: relative;
+}
+
+.radio.on::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  background: var(--indigo);
+}
+
+.popup-card .toggle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+  margin-top: 12px;
+  padding-top: 14px;
+  font-size: 15px;
+}
+
+.switch {
+  width: 44px;
+  height: 26px;
+  border-radius: 13px;
+  background: var(--indigo);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.switch::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+/* floating button mockup */
+.float-btn {
+  position: absolute;
+  top: 20px;
+  right: -60px;
+  background: var(--indigo);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 18px;
+  border-radius: 22px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  white-space: nowrap;
+}
+
+@media (max-width: 560px) {
+  .float-btn { right: -20px; }
+}
+
+footer {
+  text-align: center;
+  padding: 56px 24px 72px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+footer a { color: #fff; }
+
+footer .links { margin-bottom: 12px; }
+
+footer .links a { margin: 0 10px; }
+
+/* feedback / privacy pages */
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 72px 24px;
+}
+
+.page h1 { font-size: 36px; font-weight: 800; margin-bottom: 8px; }
+
+.page p.lead { color: var(--muted); font-size: 18px; margin-bottom: 40px; }
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 20px;
+}
+
+.card h2 { font-size: 20px; margin-bottom: 8px; }
+
+.card p { color: var(--muted); font-size: 15px; margin-bottom: 18px; }
+
+.page.privacy h2 { font-size: 20px; margin: 32px 0 8px; }
+
+.page.privacy p, .page.privacy li { color: var(--muted); font-size: 15px; }
+
+.page.privacy ul { padding-left: 22px; }
+
+.back { display: inline-block; margin-bottom: 32px; color: #fff; font-size: 14px; }

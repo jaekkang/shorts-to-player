@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      width: 260px;
+      margin: 0;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 14px;
+      color: #202124;
+    }
+    h1 {
+      font-size: 15px;
+      margin: 0 0 12px;
+    }
+    h2 {
+      font-size: 12px;
+      font-weight: 600;
+      color: #666;
+      margin: 0 0 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 0;
+      cursor: pointer;
+      line-height: 1.35;
+    }
+    label.toggle {
+      justify-content: space-between;
+      border-top: 1px solid #eee;
+      margin-top: 10px;
+      padding-top: 12px;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+      margin: 0;
+      cursor: pointer;
+    }
+    .hint {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title"></h1>
+
+  <h2 id="modeTitle"></h2>
+  <label><input type="radio" name="shortsMode" value="always" /><span id="modeAlways"></span></label>
+  <label><input type="radio" name="shortsMode" value="button" /><span id="modeButton"></span></label>
+  <label><input type="radio" name="shortsMode" value="off" /><span id="modeOff"></span></label>
+
+  <label class="toggle">
+    <span id="labelHideFeed"></span>
+    <input type="checkbox" id="hideFeed" />
+  </label>
+
+  <p class="hint" id="hint"></p>
+  <script src="popup.js"></script>
+</body>
+</html>

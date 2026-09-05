@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Shorts to Player"
+  },
+  "extDesc": {
+    "message": "유튜브 쇼츠를 자동으로, 또는 버튼 클릭으로 일반 플레이어로 엽니다. 원하면 피드에서 쇼츠를 숨길 수 있어요."
+  },
+  "popupModeTitle": {
+    "message": "쇼츠 여는 방식"
+  },
+  "modeAlways": {
+    "message": "항상 일반 플레이어로 열기"
+  },
+  "modeButton": {
+    "message": "쇼츠는 그대로 두고 전환 버튼 표시"
+  },
+  "modeOff": {
+    "message": "아무것도 안 함"
+  },
+  "popupHide": {
+    "message": "피드에서 쇼츠 숨기기"
+  },
+  "popupHint": {
+    "message": "변경 사항은 즉시 적용됩니다."
+  },
+  "openInPlayer": {
+    "message": "일반 플레이어로 열기"
+  }
+}

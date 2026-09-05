@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shorts to Player — Watch YouTube Shorts in the regular player</title>
+  <meta name="description" content="Open YouTube Shorts in the regular video player with seek bar, playback speed, and fullscreen. Optionally hide Shorts from your feed." />
+  <link rel="icon" href="icon128.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <img class="logo" src="icon128.png" alt="Shorts to Player logo" />
+    <h1>Shorts to Player</h1>
+    <p class="tagline">Watch YouTube Shorts in the regular video player — with the seek bar, playback speed, and fullscreen that Shorts took away.</p>
+    <a class="btn btn-primary" href="#" id="install">Add to Chrome</a>
+    <a class="btn btn-ghost" href="feedback.html">Give feedback</a>
+  </header>
+
+  <section class="feature">
+    <div class="wrap">
+      <h2>Shorts, but with controls</h2>
+      <p class="sub">Click any Short and it opens in the regular player. Skip around, speed up, go fullscreen, read comments beside the video.</p>
+      <div class="mock-row">
+        <div class="shorts-card">
+          <div class="play-tri"></div>
+          <span class="tag">#shorts</span>
+        </div>
+        <div class="arrow">→</div>
+        <div class="player-card">
+          <div class="screen"><div class="play-tri"></div></div>
+          <div class="seek"><div class="prog"></div><div class="head"></div></div>
+          <div class="meta"><span>0:12 / 0:58</span><span>1.5x&nbsp;&nbsp;HD&nbsp;&nbsp;⛶</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature">
+    <div class="wrap">
+      <h2>You choose how Shorts open</h2>
+      <p class="sub">Redirect every Short automatically, or keep the Shorts feed and convert only when you want. Hide Shorts from your feeds entirely if you'd rather not see them.</p>
+      <div class="popup-card">
+        <h3>Shorts to Player</h3>
+        <div class="group-label">HOW SHORTS OPEN</div>
+        <div class="opt"><span class="radio on"></span> Always open in the regular player</div>
+        <div class="opt"><span class="radio"></span> Keep the Shorts feed, show a button</div>
+        <div class="opt"><span class="radio"></span> Leave Shorts as is</div>
+        <div class="toggle-row"><span>Hide Shorts from feeds</span><span class="switch"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature">
+    <div class="wrap">
+      <h2>One click, when you want it</h2>
+      <p class="sub">In button mode, browse Shorts as usual — a floating "Open in player" button converts the current Short whenever you need real controls.</p>
+      <div class="mock-row">
+        <div class="shorts-card" style="position:relative; overflow:visible;">
+          <div class="play-tri"></div>
+          <span class="tag">#shorts</span>
+          <div class="float-btn">Open in player</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature">
+    <div class="wrap">
+      <h2>Lightweight and private</h2>
+      <p class="sub">No account. No sign-up. No data collected — ever. Your two preferences are stored in Chrome sync storage and nowhere else.</p>
+      <a class="btn btn-primary" href="#" onclick="document.getElementById('install').click(); return false;">Add to Chrome — it's free</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="links">
+      <a href="feedback.html">Feedback</a> ·
+      <a href="privacy.html">Privacy Policy</a> ·
+      <a href="https://github.com/jaekkang/shorts-to-player">GitHub</a>
+    </div>
+    <div>Shorts to Player is not affiliated with YouTube or Google.</div>
+  </footer>
+
+</body>
+</html>

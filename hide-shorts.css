@@ -1,0 +1,17 @@
+/* html에 sts-hide 속성이 있을 때만 적용됨 (팝업 토글로 제어) */
+
+/* 홈/구독 피드의 쇼츠 선반 */
+html[sts-hide] ytd-reel-shelf-renderer,
+html[sts-hide] ytd-rich-shelf-renderer[is-shorts],
+html[sts-hide] ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts]),
+html[sts-hide] grid-shelf-view-model:has(a[href^="/shorts/"]),
+
+/* 검색 결과의 쇼츠 항목 */
+html[sts-hide] ytd-video-renderer:has(a[href^="/shorts/"]),
+html[sts-hide] ytd-grid-video-renderer:has(a[href^="/shorts/"]),
+
+/* 왼쪽 사이드바의 Shorts 메뉴 */
+html[sts-hide] ytd-guide-entry-renderer:has(a[title="Shorts"]),
+html[sts-hide] ytd-mini-guide-entry-renderer[aria-label="Shorts"] {
+  display: none !important;
+}

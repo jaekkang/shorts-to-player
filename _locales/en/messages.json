@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Shorts to Player"
+  },
+  "extDesc": {
+    "message": "Open YouTube Shorts in the regular video player — automatically or with one click. Optionally hide Shorts from your feed."
+  },
+  "popupModeTitle": {
+    "message": "How Shorts open"
+  },
+  "modeAlways": {
+    "message": "Always open in the regular player"
+  },
+  "modeButton": {
+    "message": "Keep the Shorts feed, show an \"Open in player\" button"
+  },
+  "modeOff": {
+    "message": "Leave Shorts as is"
+  },
+  "popupHide": {
+    "message": "Hide Shorts from feeds"
+  },
+  "popupHint": {
+    "message": "Changes apply immediately."
+  },
+  "openInPlayer": {
+    "message": "Open in player"
+  }
+}
